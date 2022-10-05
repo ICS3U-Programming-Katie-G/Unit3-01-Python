@@ -21,14 +21,14 @@ def main():
 
     # calculating the dollars spent in tax
     # and the total spent.
-    taxDollars = subtotal * tax_constants.TAX_RATE
-    total = subtotal + taxDollars
+    tax_dollars = subtotal * tax_constants.TAX_RATE
+    total = subtotal + tax_dollars
 
     # displaying the results of the above calculations
     # back to the user.
     print(
         "In Nunavut, the amount in tax added"
-        " to your subtotal will be: ${:,.2f} CAD".format(taxDollars)
+        " to your subtotal will be: ${:,.2f} CAD".format(tax_dollars)
         )
     print(
         "In Nunavut, with that subtotal, you will end up"
